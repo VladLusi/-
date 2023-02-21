@@ -9,11 +9,5 @@ class Alucard extends Controller
         $t=\App\Models\Vlad::all();
         return view('jjj',['prod'=>$t]);
     }
-    //Поздно опомнился надо было сразу сделать переход
-    public function showOne(){
-        $cl=\App\Models\Vlad::all();
-        return view('kkk',['kaif'=>$cl]);
-
-    }
-  
+    
 }

@@ -13,14 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/catalog', [App\Http\Controllers\Alucard::class, 'show'])->name('home');{
+Route::get('/Isp', [App\Http\Controllers\TTT::class, 'show'])->name('home');{
     return view('welcome');
     
 };
-
-
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
